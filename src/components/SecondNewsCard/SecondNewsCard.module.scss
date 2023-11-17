@@ -1,0 +1,62 @@
+.news {
+  width: 100%;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+
+  .img {
+    width: 100%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      transition: 1.5s ease-in-out;
+      background-size: cover;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .content {
+    width: 100%;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .date, .count {
+        color: #636363;
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+
+    h4 {
+      color: #333;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 0;
+      margin: 0;
+    }
+
+    p {
+      color: #616161;
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+      line-height: 18px;
+    }
+  }
+}
