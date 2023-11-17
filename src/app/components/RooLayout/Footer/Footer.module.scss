@@ -1,0 +1,73 @@
+.wrapper {
+  border-top: 1px solid #ccc;
+  background: #091B44;
+  padding: 20px;
+  width: 100%;
+
+  .logo_wrapper{
+    .logo {
+      filter: brightness(0) invert(1);
+      width: 25px;
+    }
+
+  }
+
+  .network {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+
+    a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: #FFF!important;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      margin-left: 20px;
+      cursor: pointer;
+
+      svg{
+        width: 20px;
+      }
+    }
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (max-width: 1000px) {
+  .network {
+    flex-direction: column;
+  }
+
+
+  .logo_wrapper{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+
+}
