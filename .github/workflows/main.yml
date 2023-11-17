@@ -1,0 +1,25 @@
+name: CI
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: cd deployment
+        uses: appleboy/ssh-action@master
+        with:
+          host: 194.93.25.246
+          username: root
+          password: qazwsxas
+          port: 22
+          script: |
+            cd ~/web/
+            git stash
+            git pull origin master
+            npm install --force
+            npm run build
+            pm2 kill
+            pm2 start yarn --name web -- start
+    
