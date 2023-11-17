@@ -1,0 +1,17 @@
+.map_box {
+  width: 100%;
+  height: auto;
+
+  svg{
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  }
+
+  path {
+    cursor: pointer !important;
+  }
+
+  .title{
+    position: absolute;
+  }
+}
