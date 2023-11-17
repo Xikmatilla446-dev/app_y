@@ -1,0 +1,145 @@
+@import "../../../../assets/sass/variables.scss";
+
+.wrapper {
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	padding-top: 15px;
+	position: fixed;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 20px 0px rgba(119, 123, 130, 0.26);
+
+	.service {
+		padding: 10px;
+		color: inherit !important;
+		font-size: 15px;
+		font-weight: 500;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		cursor: pointer;
+		user-select: none;
+	}
+
+	.left {
+		.logo {
+			margin-right: 20px;
+			cursor: pointer;
+
+			img{
+				height: 20px;
+			}
+		}
+
+		.action_font {
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			cursor: pointer;
+			margin-right: 20px;
+
+			svg {
+				margin-right: 5px;
+				margin-left: 5px;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.right {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex: 1;
+	}
+}
+
+.local {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+.appearance {
+	min-width: 215px;
+	padding: 10px;
+
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+		padding: 0;
+
+		li {
+			width: 35px;
+			height: 35px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			border-radius: 3px;
+			font-size: 20px;
+			cursor: pointer;
+			min-width: 35px;
+
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
+
+			&.default {
+				background: #003fa5;
+			}
+
+			&.greyscale {
+				background: #525252;
+			}
+
+			&.greyscale-invert {
+				background-color: #000000;
+			}
+		}
+	}
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (max-width: 1000px) {
+	.wrapper {
+		.service {
+			display: none;
+		}
+
+		.right {
+			justify-content: end;
+
+			span {
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+		}
+
+		.left {
+			.action_font {
+				display: none;
+			}
+		}
+	}
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+}
