@@ -1,0 +1,57 @@
+.statistic {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+
+
+  .content {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #e6e9ed;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #122067 !important;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+  }
+
+  .slider_chart {
+    position: relative;
+    width: 100%;
+
+
+    .action {
+      position: absolute;
+      top: -20px;
+      right: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+
+      .previous, .next {
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: transparent;
+        user-select: none;
+        margin-left: 5px;
+        margin-right: 5px;
+
+      }
+    }
+  }
+}

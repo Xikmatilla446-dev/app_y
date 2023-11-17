@@ -1,0 +1,133 @@
+.mapSection{
+  width: 100%;
+  margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+
+  .box{
+    width: 80%;
+    float: right;
+
+
+
+    .header{
+      width: 100%;
+      display: flex;
+      border-radius: 20px;
+      padding: 20px 10px;
+      span{
+        color: #091B44;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: left;
+      }
+
+      div:first-child{
+        padding: 0 40px!important;
+
+        span{
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .body{
+      max-height: 450px;
+      flex-grow: 1;
+      height: 440px;
+      overflow-y: auto;
+      padding: 0 5px;
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #e6e9ed;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #a0b0dc !important;
+        border-radius: 30px;
+      }
+
+      .row{
+        width: 100%;
+        background-color: #F8FAFD;
+        border-radius: 15px;
+        padding: 15px 7px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        user-select: none;
+
+
+        &.map_active{
+          background-color: #122067;
+
+          div{
+            color: #FFFFFF;
+            strong{
+              color: #FFFFFF;
+
+
+              &:before{
+                color: #FFFFFF;
+              }
+            }
+          }
+        }
+
+        div{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          position: relative;
+
+
+
+          strong{
+            color: #5B7ED7;
+            font-size: 14px;
+            font-weight: 700;
+            position: relative;
+            margin-right: 20px;
+            margin-left: 10px;
+
+            &:before{
+              position: absolute;
+              content: " ";
+              right: -10px;
+              top: 0;
+              width: 2px;
+              height: 100%;
+              background-color: #D1DBFF;
+
+            }
+          }
+        }
+      }
+
+
+    }
+
+
+  }
+}
+
+
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (max-width: 1000px) {
+
+  .mapSection {
+
+    .box {
+      width: 100%;
+      float: left;
+    }
+  }
+
+  }
